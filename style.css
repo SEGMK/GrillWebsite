@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+body>* {
+    margin-bottom: 5vh !important;
+}
+
+.quicksand-font {
+    font-family: "Quicksand", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+}
+.quicksand-font-light {
+    font-family: "Quicksand", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 100 !important;
+    font-style: normal !important;
+}
+.hidden{
+    opacity: 0;
+    transition: opacity 1.5s !important;
+}
+.shown{
+    opacity: 1;
+}

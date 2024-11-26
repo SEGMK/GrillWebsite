@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="infoGrid.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="websiteSnapshot.css">
+    <link rel="stylesheet" href="productsGrid.css">
+    <!-- header -->
+    <link rel="stylesheet" href="../Header/BurgerMenuIcon.css">
+    <link rel="stylesheet" href="../Header/Header.css">
+    <link rel="stylesheet" href="../Header/BurgerMenuContent.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="quicksand-font">
+    <div id="fullHeaderElement">
+        <div id="header" class="headerTextStyle">
+            <div class="centerContent" style="gap: 30px;">
+                <img id="elliteqHeaderIcon" src="OFYR-logo-white.png" />
+                <div id="menuToggle" onclick="ChangeMenuState()">
+                    <input type="checkbox" id="menuCheckbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="headersHorizontalMenu" class="headerTextBlock">
+                <div>Kolekcja</div>
+                <div>OFYR</div>
+                <div>Profesjonaliści</div>
+                <div>Kontakt</div>
+            </div>
+            <div class="displayInline centerContent" style="font-size: 16px;">
+                <div class="headerTextBlock">
+                    <div style="display: flex !important; gap: 20px;">
+                        <img id="phoneIcon" src="phone-icon-white.png" />
+                        <p>000 000 000</p>
+                    </div>
+                </div>
+                <div class="headerRoundedButton">
+                    Prezentacja OFYR
+                </div>
+            </div>
+        </div>
+        <div id="burgerMenuContent">
+            <ul id="menu" class="quicksand-font">
+                <li>
+                    <a href="#">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Kolekcja</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">OFYR</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Profesjonaliści</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Kontakt</label>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="website-snapshot">
+        <div id="website-snapshot-text">
+            <h1 style="font-size: 7vh; color: white;" class="quicksand-font-light">SZTUKA</br>GRILOWANIA</h1>
+            <p style="font-size: 2vh; color: white;">Rozpal w sobie pasje z grillami OFYR</p>
+        </div>
+        <div class="black-screen"></div>
+        <video autoplay muted loop id="website-snapshot-video">
+            <source src="6506373_Meat_Grill_1920x1080.mp4">
+        </video>
+    </div>
+    <div id="products-list">
+        <div id="grid-products">
+            <div class="product hidden">
+                <h1 class="product-name">STACJONARNE GRILLE OFYR</h1>
+                <img class="product-img" src="OFYR-product-2.png">
+            </div>
+            <div class="product hidden">
+                <h1 class="product-name">STACJONARNE GRILLE OFYR</h1>
+                <img class="product-img" src="OFYR-product.png">
+            </div>
+            <div class="product hidden">
+                <h1 class="product-name">STACJONARNE GRILLE OFYR</h1>
+                <img class="product-img" src="OFYR-product-2.png">
+            </div>
+            <div class="product hidden">
+                <h1 class="product-name">STACJONARNE GRILLE OFYR</h1>
+                <img class="product-img" src="OFYR-product.png">
+            </div>
+        </div>
+    </div>
+    <div id="main-container">
+        <div id="grid-1">
+            <div class="col-s hidden">
+                <div class="img-container">
+                    <img class="grid-img" src="Spatrend-premium-Ofyr-grillsuto.jpg"
+                        style="box-shadow: -10px -10px 0px 0px rgba(66, 68, 90, 1);">
+                </div>
+            </div>
+            <div class="col-h hidden">
+                <h1 style="text-align: right;">PROFESJONALNE PODEJŚCIE</h1>
+                <p style="text-align: right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <div class="buttons-container">
+                    <div class="div-button">ZOBACZ WIĘCEJ</div>
+                </div>
+            </div>
+            <div class="col-h hidden">
+                <h1 style="text-align: left;">NAJWYŻSZA JAKOŚĆ</h1>
+                <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <div class="buttons-container">
+                    <div class="div-button">SZCZEGÓŁY</div>
+                    <div class="div-button">CERTYFIKATY</div>
+                </div>
+            </div>
+            <div class="col-s hidden">
+                <div class="img-container">
+                    <img class="grid-img" src="Spatrend-premium-Ofyr-grillsuto.jpg"
+                        style="box-shadow: 10px -10px 0px 0px rgba(66, 68, 90, 1);">
+                </div>
+            </div>
+            <div class="col-s hidden">
+                <div class="img-container">
+                    <img class="grid-img" src="Spatrend-premium-Ofyr-grillsuto.jpg"
+                        style="box-shadow: -10px -10px 0px 0px rgba(66, 68, 90, 1);">
+                </div>
+            </div>
+            <div class="col-h hidden">
+                <h1 style="text-align: right;">NOWOCZESNA TECHNOLOGIA</h1>
+                <p style="text-align: right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer-container">
+        <div id="footer-content">
+            <div class="footer-item">
+                <h1>COLLECTION</h1>
+                <p>item</p>
+                <p>item</p>
+                <p>item</p>
+            </div>
+            <div class="footer-item">
+                <h1>COLLECTION</h1>
+                <p>item</p>
+                <p>item</p>
+                <p>item</p>
+            </div>
+            <div class="footer-item">
+                <h1>COLLECTION</h1>
+                <p>item</p>
+                <p>item</p>
+                <p>item</p>
+            </div>
+            <div class="footer-item">
+                <h1>COLLECTION</h1>
+                <p>item</p>
+                <p>item</p>
+                <p>item</p>
+            </div>
+            <div class="footer-item">
+                <h1>COLLECTION</h1>
+                <p>item</p>
+                <p>item</p>
+                <p>item</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="pageLayoutController.js"></script>
+<script type="module" src="globalData.js"></script>
+<script type="module" src="gridProductsController.js"></script>
+<script type="module" src="websiteSnapshotController.js"></script>
+<script type="module" src="footerController.js"></script>
+<script type="module" src="websiteOnScrollAnimationController.js"></script>
+<script type="module" src="HeaderLayoutController.js"></script>
+<script src="BurgerMenuController.js"></script>
+
+</html>

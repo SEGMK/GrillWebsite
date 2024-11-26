@@ -1,0 +1,93 @@
+#products-list {
+    margin: auto;
+    width: 70%;
+    color: black;
+}
+
+#grid-products {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 100%;
+    gap: 5px;
+    /* 3D effect*/
+    perspective: 1000px;
+}
+
+.product {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #F7F7F7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*3D effect*/
+    backface-visibility: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform: translateZ(0);
+}
+
+.product img,
+.product h1 {
+    transition: 0.5s;
+}
+
+.product:hover {
+    cursor: pointer;
+    background-image: url('ofyr-square-3.jpg');
+    /*3D effect*/
+    z-index: 5;
+    transform: translateZ(50px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.product:hover img {
+    opacity: 0;
+}
+
+.product:hover h1 {
+    color: white;
+    border: 2px transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.product-name {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img-product-container {
+    flex: 2;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 0;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.product:nth-child(1){
+    transition: opacity 1.5s ease-in-out 0.0s !important;
+}
+.product:nth-child(2){
+    transition: opacity 1.5s ease-in-out 0.2s !important;
+}
+.product:nth-child(3){
+    transition: opacity 1.5s ease-in-out 0.4s !important;
+}
+.product:nth-child(4){
+    transition: opacity 1.5s ease-in-out 0.6s !important;
+}
